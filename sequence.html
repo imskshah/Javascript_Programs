@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function subarr(A, B, y,z)
+{
+	
+	var i = 0, j = 0;
+
+	
+	while (i < y && j < z) {
+
+	
+		if (A[i] == B[j]) {
+
+			i++;
+			j++;
+
+			
+			if (j == z)
+				return true;
+		}
+	
+		else {
+			i = i - j + 1;
+			j = 0;
+		}
+	}
+
+	return false;
+}
+
+var A = [ 2, 3, 0, 5, 1, 1, 2 ];
+var y = A.length;
+var B = [ 3, 0, 5, 1 ];
+var z =B.length;
+if (subarr(A, B, y, z))
+		document.write( "True <br>");
+	else
+		document.write( "False <br>");
+		
+    </script>
+</body>
+</html>
