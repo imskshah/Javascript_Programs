@@ -1,0 +1,29 @@
+.main
+{
+position: absolute;
+left: 40%;
+top:5%;
+}
+
+button
+{
+  width: 100%;
+    border: 2px solid #D1F2EB;
+    border-radius: 4px;
+    background-color: darkslategray;
+    color: white;
+    outline: none;
+    padding: 7px;
+}
+
+h5{
+   margin-left: 10px;
+}
+
+.container
+{
+  position: absolute;
+left: 35%;
+top:35%;
+}
+
